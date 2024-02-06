@@ -35,7 +35,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">NiceAdmin</span>
+        <span class="d-none d-lg-block">CeeVee</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -291,8 +291,24 @@
           <span>Dashboard</span>
         </a>
       </li>
-
   <!-- Dashboard Navigation end -->
+
+
+
+
+
+        <!-- start categories nav -->
+        <li class="nav-item">
+          <div class="d-flex align-items-center">
+            <a class="nav-link collapsed" href="index.html">
+              <i class="bi bi-bar-chart"></i><span>Category</span>
+            </a>
+            <i data-bs-target="#cat-nav"  data-bs-toggle="collapse" class="bi bi-chevron-down ms-auto"></i>
+          </div>
+          <ul id="cat-nav" class="nav-content collapse" data-bs-parent="#r1-nav">
+        <!-- start categories nav -->
+
+
 
       <!-- start Laptop nav -->
       <li class="nav-item">
@@ -302,7 +318,7 @@
           </a>
           <i data-bs-target="#laptop-nav"  data-bs-toggle="collapse" class="bi bi-chevron-down ms-auto"></i>
         </div>
-        <ul id="laptop-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+        <ul id="laptop-nav" class="nav-content collapse" data-bs-parent="#r1-nav">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="tabletPartsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="bi bi-circle"></i><span>Laptop Parts</span>
@@ -321,7 +337,7 @@
               <li><a class="dropdown-item" href="#">Trackpad</a></li>
               <li><a class="dropdown-item" href="#">Others</a></li>
             </ul>
-          </li> 
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="tabletPartsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="bi bi-circle"></i><span>Laptop Accessories</span>
@@ -335,13 +351,10 @@
               <li><a class="dropdown-item" href="#">Dongle</a></li>
               <li><a class="dropdown-item" href="#">Others</a></li>
             </ul>
-          </li>          
+          </li>
         </ul>
       </li>
       <!-- End Laptop nav -->
-
-
-
 
 
 
@@ -353,7 +366,7 @@
           </a>
           <i data-bs-target="#desktop-nav"  data-bs-toggle="collapse" class="bi bi-chevron-down ms-auto"></i>
         </div>
-        <ul id="desktop-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+        <ul id="desktop-nav" class="nav-content collapse" data-bs-parent="#r1-nav">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="tabletPartsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="bi bi-circle"></i><span>Desktop Parts</span>
@@ -383,15 +396,10 @@
               <li><a class="dropdown-item" href="#">UPS</a></li>
               <li><a class="dropdown-item" href="#">Others</a></li>
             </ul>
-          </li>          
+          </li>
         </ul>
       </li>
       <!-- End desktop nav -->
-
-
-
-
-
 
 
       <!-- start Phone nav -->
@@ -402,7 +410,7 @@
           </a>
           <i data-bs-target="#phone-nav"  data-bs-toggle="collapse" class="bi bi-chevron-down ms-auto"></i>
         </div>
-        <ul id="phone-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+        <ul id="phone-nav" class="nav-content collapse" data-bs-parent="#r1-nav">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="tabletPartsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="bi bi-circle"></i><span>Phone Accessories</span>
@@ -416,7 +424,7 @@
               <li><a class="dropdown-item" href="#">Dock</a></li>
               <li><a class="dropdown-item" href="#">Others</a></li>
             </ul>
-          </li> 
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="tabletPartsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="bi bi-circle"></i><span>Phone Parts</span>
@@ -431,13 +439,10 @@
               <li><a class="dropdown-item" href="#">Mic</a></li>
               <li><a class="dropdown-item" href="#">Others</a></li>
             </ul>
-          </li>          
+          </li>
         </ul>
       </li>
       <!-- End phone nav -->
-
-
-
 
 
       <!-- start Tablet nav -->
@@ -448,7 +453,7 @@
           </a>
           <i data-bs-target="#tablet-nav"  data-bs-toggle="collapse" class="bi bi-chevron-down ms-auto"></i>
         </div>
-        <ul id="tablet-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+        <ul id="tablet-nav" class="nav-content collapse" data-bs-parent="#r1-nav">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="tabletPartsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="bi bi-circle"></i><span>Tablet Accessories</span>
@@ -462,7 +467,7 @@
               <li><a class="dropdown-item" href="#">Stand</a></li>
               <li><a class="dropdown-item" href="#">Others</a></li>
             </ul>
-          </li> 
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="tabletPartsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="bi bi-circle"></i><span>Tablet Parts</span>
@@ -477,42 +482,271 @@
               <li><a class="dropdown-item" href="#">Mic</a></li>
               <li><a class="dropdown-item" href="#">Others</a></li>
             </ul>
-          </li>          
+          </li>
         </ul>
       </li>
       <!-- End Tablet nav -->
 
 
 
-
-
-
-
-
-
-
+      <!-- start Console nav -->
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-gem"></i><span>Icons</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="icons-bootstrap.html">
-              <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
+        <div class="d-flex align-items-center">
+          <a class="nav-link collapsed" href="index.html">
+            <i class="bi bi-bar-chart"></i><span>Console</span>
+          </a>
+          <i data-bs-target="#console-nav"  data-bs-toggle="collapse" class="bi bi-chevron-down ms-auto"></i>
+        </div>
+        <ul id="console-nav" class="nav-content collapse" data-bs-parent="#r1-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="tabletPartsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bi bi-circle"></i><span>Console Accessories</span>
             </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="tabletPartsDropdown">
+              <li><a class="dropdown-item" href="#">Case</a></li>
+              <li><a class="dropdown-item" href="#">Controller</a></li>
+              <li><a class="dropdown-item" href="#">Games</a></li>
+              <li><a class="dropdown-item" href="#">Dock</a></li>
+              <li><a class="dropdown-item" href="#">Sticker</a></li>
+              <li><a class="dropdown-item" href="#">Others</a></li>
+            </ul>
           </li>
-          <li>
-            <a href="icons-remix.html">
-              <i class="bi bi-circle"></i><span>Remix Icons</span>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="tabletPartsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bi bi-circle"></i><span>Console Parts</span>
             </a>
-          </li>
-          <li>
-            <a href="icons-boxicons.html">
-              <i class="bi bi-circle"></i><span>Boxicons</span>
-            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="tabletPartsDropdown">
+              <li><a class="dropdown-item" href="#">Disk drive</a></li>
+              <li><a class="dropdown-item" href="#">Drive</a></li>
+              <li><a class="dropdown-item" href="#">Power supply</a></li>
+              <li><a class="dropdown-item" href="#">Others</a></li>
+              <li><a class="dropdown-item" href="#">Lense</a></li>
+              <li><a class="dropdown-item" href="#">Charging port</a></li>
+              <li><a class="dropdown-item" href="#">Mic</a></li>
+              <li><a class="dropdown-item" href="#">Others</a></li>
+            </ul>
           </li>
         </ul>
-      </li><!-- End Icons Nav -->
+      </li>
+      <!-- End Console nav -->
+
+
+
+      <!-- start Appliance nav -->
+      <li class="nav-item">
+        <div class="d-flex align-items-center">
+          <a class="nav-link collapsed" href="index.html">
+            <i class="bi bi-bar-chart"></i><span>Appliance</span>
+          </a>
+          <i data-bs-target="#appliance-nav"  data-bs-toggle="collapse" class="bi bi-chevron-down ms-auto"></i>
+        </div>
+        <ul id="appliance-nav" class="nav-content collapse" data-bs-parent="#r1-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="tabletPartsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bi bi-circle"></i><span>Home Appliance</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="tabletPartsDropdown">
+              <li><a class="dropdown-item" href="#">TV</a></li>
+              <li><a class="dropdown-item" href="#">Sound system</a></li>
+              <li><a class="dropdown-item" href="#">Fan</a></li>
+              <li><a class="dropdown-item" href="#">Air conditioner</a></li>
+              <li><a class="dropdown-item" href="#">Washing machine</a></li>
+              <li><a class="dropdown-item" href="#">Router</a></li>
+              <li><a class="dropdown-item" href="#">Others</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="tabletPartsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bi bi-circle"></i><span>Kitchen Appliance</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="tabletPartsDropdown">
+              <li><a class="dropdown-item" href="#">Blender</a></li>
+              <li><a class="dropdown-item" href="#">Microwave Oven</a></li>
+              <li><a class="dropdown-item" href="#">Fridge/Freezer</a></li>
+              <li><a class="dropdown-item" href="#">Toaster</a></li>
+              <li><a class="dropdown-item" href="#">Mixer</a></li>
+              <li><a class="dropdown-item" href="#">Others</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <!-- End Appliance nav -->
+
+
+
+      <!-- start Professional nav -->
+      <li class="nav-item">
+        <div class="d-flex align-items-center">
+          <a class="nav-link collapsed" href="index.html">
+            <i class="bi bi-bar-chart"></i><span>Professional</span>
+          </a>
+          <i data-bs-target="#pro-nav"  data-bs-toggle="collapse" class="bi bi-chevron-down ms-auto"></i>
+        </div>
+        <ul id="pro-nav" class="nav-content collapse" data-bs-parent="#r1-nav">
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="tabletPartsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bi bi-circle"></i><span>Server/Networking</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="tabletPartsDropdown">
+              <li><a class="dropdown-item" href="#">POE/switch</a></li>
+              <li><a class="dropdown-item" href="#">Routers</a></li>
+              <li><a class="dropdown-item" href="#">Video switch</a></li>
+              <li><a class="dropdown-item" href="#">Nas</a></li>
+              <li><a class="dropdown-item" href="#">LAN cable</a></li>
+              <li><a class="dropdown-item" href="#">Others</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="tabletPartsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bi bi-circle"></i><span>Sound</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="tabletPartsDropdown">
+              <li><a class="dropdown-item" href="#">Mic</a></li>
+              <li><a class="dropdown-item" href="#">Mic stand</a></li>
+              <li><a class="dropdown-item" href="#">sound mixer</a></li>
+              <li><a class="dropdown-item" href="#">Pop filters</a></li>
+              <li><a class="dropdown-item" href="#">Insulations</a></li>
+              <li><a class="dropdown-item" href="#">Mic stand</a></li>
+              <li><a class="dropdown-item" href="#">Others</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="tabletPartsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bi bi-circle"></i><span>Video/pictures</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="tabletPartsDropdown">
+              <li><a class="dropdown-item" href="#">DSLR</a></li>
+              <li><a class="dropdown-item" href="#">Video Recorder</a></li>
+              <li><a class="dropdown-item" href="#">Diffuser</a></li>
+              <li><a class="dropdown-item" href="#">Stage light/flash</a></li>
+              <li><a class="dropdown-item" href="#">Background</a></li>
+              <li><a class="dropdown-item" href="#">Camera stand</a></li>
+              <li><a class="dropdown-item" href="#">Others</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <!-- End Professional nav -->
+
+
+
+      <!-- start Car nav -->
+      <li class="nav-item">
+        <div class="d-flex align-items-center">
+          <a class="nav-link collapsed" href="index.html">
+            <i class="bi bi-bar-chart"></i><span>Cars</span>
+          </a>
+          <i data-bs-target="#car-nav"  data-bs-toggle="collapse" class="bi bi-chevron-down ms-auto"></i>
+        </div>
+        <ul id="car-nav" class="nav-content collapse" data-bs-parent="#r1-nav">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="bi bi-circle"></i><span>Sedans</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="bi bi-circle"></i><span>Convertible</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="bi bi-circle"></i><span>Midsize-SUV</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="bi bi-circle"></i><span>Fullsize-SUV</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="bi bi-circle"></i><span>Trucks</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="bi bi-circle"></i><span>Vans</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="bi bi-circle"></i><span>Trailers</span>
+                </a>
+              </li>
+        </ul>
+      </li>
+      <!-- End car nav -->
+
+
+
+      <!-- start carparts nav -->
+      <li class="nav-item">
+        <div class="d-flex align-items-center">
+          <a class="nav-link collapsed" href="index.html">
+            <i class="bi bi-bar-chart"></i><span>Car parts/Accessories</span>
+          </a>
+          <i data-bs-target="#carpart-nav"  data-bs-toggle="collapse" class="bi bi-chevron-down ms-auto"></i>
+        </div>
+        <ul id="carpart-nav" class="nav-content collapse" data-bs-parent="#r1-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="tabletPartsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bi bi-circle"></i><span>Parts</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="tabletPartsDropdown">
+              <li><a class="dropdown-item" href="#">Transmission</a></li>
+              <li><a class="dropdown-item" href="#">Engine</a></li>
+              <li><a class="dropdown-item" href="#">AC parts</a></li>
+              <li><a class="dropdown-item" href="#">Radiator</a></li>
+              <li><a class="dropdown-item" href="#">Tires</a></li>
+              <li><a class="dropdown-item" href="#">Battery</a></li>
+              <li><a class="dropdown-item" href="#">Others</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="tabletPartsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bi bi-circle"></i><span>Accessories</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="tabletPartsDropdown">
+              <li><a class="dropdown-item" href="#">Dashboard cover</a></li>
+              <li><a class="dropdown-item" href="#">Steering Cover</a></li>
+              <li><a class="dropdown-item" href="#">console</a></li>
+              <li><a class="dropdown-item" href="#">Sit cover</a></li>
+              <li><a class="dropdown-item" href="#">Dashcam</a></li>
+              <li><a class="dropdown-item" href="#">Others</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <!-- End Appliance nav -->
+
+
+
+
+          </ul>
+        </li>
+        <!-- End categories nav -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <li class="nav-heading">Categories</li>
 
@@ -598,6 +832,35 @@
 
       </div>
     </section>
+
+
+    <section class="section dashboard">
+      <div class="row">
+
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="image-mask">
+                <!-- Your content here -->
+              </div>
+            </div>
+            <div class="col-12 col-md-8">
+              <!-- Other content here -->
+            </div>
+          </div>
+        </div>
+
+
+
+                    
+      </div>
+
+
+    </section>
+
+
 
   </main><!-- End #main -->
 
