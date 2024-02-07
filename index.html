@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Dashboard - NiceAdmin Bootstrap Template</title>
   <meta content="" name="description">
@@ -14,12 +15,19 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet"> <!-- Include the Ropa Sans font -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons CSS (Optional, if you want to use Bootstrap Icons) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
@@ -37,7 +45,6 @@
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">CeeVee</span>
       </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
 
 <!-- search -->
@@ -58,11 +65,6 @@
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
 
-        <li class="nav-item d-block d-lg-none">
-          <a class="nav-link nav-icon search-bar-toggle " href="#">
-            <i class="bi bi-search"></i>
-          </a>
-        </li><!-- End Search Icon-->
 
         <li class="nav-item dropdown">
 
@@ -838,36 +840,552 @@
       <div class="row">
 
 
-        <!-- Sales Card -->
-        <div class="col-xxl-3 col-md-4 col-lg-4 col-sm-6">
-          <div class="card info-card sales-card">
-        
-            <div class="card-body">
-              <img src="https://placekitten.com/640/360" class="card-img-top image-overlay">
-        
-              <div class="d-flex align-items-center">
-                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="bi bi-cart"></i>
-                </div>
-                <div class="ps-3">
-                  <h6>145</h6>
-                  <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span>
-                </div>
+
+<!-- listings Card -->
+<div class="col-xxl-3 col-md-4 col-lg-4 col-sm-6">
+  <div class="card listing">
+    <div class="card-body position-relative">
+      <a href="#" class="image-mask">
+        <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRrgvf9gpzKh5gPNaLSg0PvkWLnDSnKoIZ9CQ1G-BnjHGKX8UiYPGrMA8J_lvHGa2ke-3tOs_B5iH1SU-jsYKjBObWF4w=s1600" class="card-img-top image-overlay limit-image">
+      </a>
+
+      <i class="bi bi-plus-square position-absolute top-0 end-0"></i>
+      <div class="d-flex">
+        <div class="col-8 card-dis">
+          <div class="row">
+            <div class="d-flex align-items-center dis-row">
+              <i class="bi bi-coin"></i>
+              <h3 class="mb-0">300000</h3>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-laptop"></i>
+              <h5 class="mb-0">Macbook pro 2011</h5>
+            </div>
+          </div>
+
+          <div class="spec-row">
+            <div class="d-flex flex-wrap align-items-center">
+              <div>
+                <i class="bi bi-device-ssd"></i>
+                <h7 class="pe-2">128gb.ssd</h7>
+              </div>
+              <div>
+                <i class="bi bi-memory"></i>
+                <h7 class="pe-2">8gb.ddr3</h7>
+              </div>
+              <div>
+                <i class="bi bi-cpu"></i>
+                <h7 class="pe-2">i7</h7>
+              </div>
+              <div>
+                <i class="bi bi-cpu-fill"></i>
+                <h7 class="pe-2">3350M</h7>
+              </div>
+              <div>
+                <i class="bi bi-tv"></i>
+                <h7 class="pe-2">1280x800</h7>
+              </div>
+              <div>
+                <i class="bi bi-display"></i>
+                <h7 class="pe-2">LCD</h7>
               </div>
             </div>
 
           </div>
-        </div><!-- End Sales Card -->
-
-
-
-
-
+        </div>
+        <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+          <a href="#">
+            <i class="bi bi-star"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-star-half"></i>
+          </a>
+        </div>
 
       </div>
+    </div>
+  </div>
+</div>
+<!-- listings Card -->
 
 
+<!-- listings Card -->
+<div class="col-xxl-3 col-md-4 col-lg-4 col-sm-6">
+  <div class="card listing">
+    <div class="card-body position-relative">
+      <a href="#" class="image-mask">
+        <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYR-lunshlZGsqK5KnW2rHtYfZM2aRf8WFcSier4rQoQloWHN-GGiGwDRRNQbnRY_nf6KHjooyR36ZVOewfegSQZx0ZJsw=s1600" class="card-img-top image-overlay limit-image">
+      </a>
+
+      <i class="bi bi-plus-square position-absolute top-0 end-0"></i>
+      <div class="d-flex">
+        <div class="col-8 card-dis">
+          <div class="row">
+            <div class="d-flex align-items-center dis-row">
+              <i class="bi bi-coin"></i>
+              <h3 class="mb-0">300000</h3>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-laptop"></i>
+              <h5 class="mb-0">Macbook pro 2011</h5>
+            </div>
+          </div>
+
+          <div class="spec-row">
+            <div class="d-flex flex-wrap align-items-center">
+              <div>
+                <i class="bi bi-device-ssd"></i>
+                <h7 class="pe-2">128gb.ssd</h7>
+              </div>
+              <div>
+                <i class="bi bi-memory"></i>
+                <h7 class="pe-2">8gb.ddr3</h7>
+              </div>
+              <div>
+                <i class="bi bi-cpu"></i>
+                <h7 class="pe-2">i7</h7>
+              </div>
+              <div>
+                <i class="bi bi-cpu-fill"></i>
+                <h7 class="pe-2">3350M</h7>
+              </div>
+              <div>
+                <i class="bi bi-tv"></i>
+                <h7 class="pe-2">1280x800</h7>
+              </div>
+              <div>
+                <i class="bi bi-display"></i>
+                <h7 class="pe-2">LCD</h7>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+          <a href="#">
+            <i class="bi bi-star"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-star-half"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- listings Card -->
+
+<!-- listings Card -->
+<div class="col-xxl-3 col-md-4 col-lg-4 col-sm-6">
+  <div class="card listing">
+    <div class="card-body position-relative">
+      <a href="#" class="image-mask">
+        <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTz4bhX2oPpCPrsy3uDBeB_DoCPMRO4MfGkhHKju_70mvx01OC0hw6sGJ7gtF9OAiIEaUZTyk1j2dkIbOyi1lf2pVG2=s1600" class="card-img-top image-overlay limit-image">
+      </a>
+
+      <i class="bi bi-plus-square position-absolute top-0 end-0"></i>
+      <div class="d-flex">
+        <div class="col-8 card-dis">
+          <div class="row">
+            <div class="d-flex align-items-center dis-row">
+              <i class="bi bi-coin"></i>
+              <h3 class="mb-0">300000</h3>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-laptop"></i>
+              <h5 class="mb-0">Macbook pro 2011</h5>
+            </div>
+          </div>
+
+          <div class="spec-row">
+            <div class="d-flex flex-wrap align-items-center">
+              <div>
+                <i class="bi bi-device-ssd"></i>
+                <h7 class="pe-2">128gb.ssd</h7>
+              </div>
+              <div>
+                <i class="bi bi-memory"></i>
+                <h7 class="pe-2">8gb.ddr3</h7>
+              </div>
+              <div>
+                <i class="bi bi-cpu"></i>
+                <h7 class="pe-2">i7</h7>
+              </div>
+              <div>
+                <i class="bi bi-cpu-fill"></i>
+                <h7 class="pe-2">3350M</h7>
+              </div>
+              <div>
+                <i class="bi bi-tv"></i>
+                <h7 class="pe-2">1280x800</h7>
+              </div>
+              <div>
+                <i class="bi bi-display"></i>
+                <h7 class="pe-2">LCD</h7>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+          <a href="#">
+            <i class="bi bi-star"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-star-half"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- listings Card -->
+
+<!-- listings Card -->
+<div class="col-xxl-3 col-md-4 col-lg-4 col-sm-6">
+  <div class="card listing">
+    <div class="card-body position-relative">
+      <a href="#" class="image-mask">
+        <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRrgvf9gpzKh5gPNaLSg0PvkWLnDSnKoIZ9CQ1G-BnjHGKX8UiYPGrMA8J_lvHGa2ke-3tOs_B5iH1SU-jsYKjBObWF4w=s1600" class="card-img-top image-overlay limit-image">
+      </a>
+
+      <i class="bi bi-plus-square position-absolute top-0 end-0"></i>
+      <div class="d-flex">
+        <div class="col-8 card-dis">
+          <div class="row">
+            <div class="d-flex align-items-center dis-row">
+              <i class="bi bi-coin"></i>
+              <h3 class="mb-0">300000</h3>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-laptop"></i>
+              <h5 class="mb-0">Macbook pro 2011</h5>
+            </div>
+          </div>
+
+          <div class="spec-row">
+            <div class="d-flex flex-wrap align-items-center">
+              <div>
+                <i class="bi bi-device-ssd"></i>
+                <h7 class="pe-2">128gb.ssd</h7>
+              </div>
+              <div>
+                <i class="bi bi-memory"></i>
+                <h7 class="pe-2">8gb.ddr3</h7>
+              </div>
+              <div>
+                <i class="bi bi-cpu"></i>
+                <h7 class="pe-2">i7</h7>
+              </div>
+              <div>
+                <i class="bi bi-cpu-fill"></i>
+                <h7 class="pe-2">3350M</h7>
+              </div>
+              <div>
+                <i class="bi bi-tv"></i>
+                <h7 class="pe-2">1280x800</h7>
+              </div>
+              <div>
+                <i class="bi bi-display"></i>
+                <h7 class="pe-2">LCD</h7>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+          <a href="#">
+            <i class="bi bi-star"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-star-half"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- listings Card -->
+
+
+<!-- listings Card -->
+<div class="col-xxl-3 col-md-4 col-lg-4 col-sm-6">
+  <div class="card listing">
+    <div class="card-body position-relative">
+      <a href="#" class="image-mask">
+        <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYR-lunshlZGsqK5KnW2rHtYfZM2aRf8WFcSier4rQoQloWHN-GGiGwDRRNQbnRY_nf6KHjooyR36ZVOewfegSQZx0ZJsw=s1600" class="card-img-top image-overlay limit-image">
+      </a>
+
+      <i class="bi bi-plus-square position-absolute top-0 end-0"></i>
+      <div class="d-flex">
+        <div class="col-8 card-dis">
+          <div class="row">
+            <div class="d-flex align-items-center dis-row">
+              <i class="bi bi-coin"></i>
+              <h3 class="mb-0">300000</h3>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-laptop"></i>
+              <h5 class="mb-0">Macbook pro 2011</h5>
+            </div>
+          </div>
+
+          <div class="spec-row">
+            <div class="d-flex flex-wrap align-items-center">
+              <div>
+                <i class="bi bi-device-ssd"></i>
+                <h7 class="pe-2">128gb.ssd</h7>
+              </div>
+              <div>
+                <i class="bi bi-memory"></i>
+                <h7 class="pe-2">8gb.ddr3</h7>
+              </div>
+              <div>
+                <i class="bi bi-cpu"></i>
+                <h7 class="pe-2">i7</h7>
+              </div>
+              <div>
+                <i class="bi bi-cpu-fill"></i>
+                <h7 class="pe-2">3350M</h7>
+              </div>
+              <div>
+                <i class="bi bi-tv"></i>
+                <h7 class="pe-2">1280x800</h7>
+              </div>
+              <div>
+                <i class="bi bi-display"></i>
+                <h7 class="pe-2">LCD</h7>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+          <a href="#">
+            <i class="bi bi-star"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-star-half"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- listings Card -->
+
+<!-- listings Card -->
+<div class="col-xxl-3 col-md-4 col-lg-4 col-sm-6">
+  <div class="card listing">
+    <div class="card-body position-relative">
+      <a href="#" class="image-mask">
+        <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTz4bhX2oPpCPrsy3uDBeB_DoCPMRO4MfGkhHKju_70mvx01OC0hw6sGJ7gtF9OAiIEaUZTyk1j2dkIbOyi1lf2pVG2=s1600" class="card-img-top image-overlay limit-image">
+      </a>
+
+      <i class="bi bi-plus-square position-absolute top-0 end-0"></i>
+      <div class="d-flex">
+        <div class="col-8 card-dis">
+          <div class="row">
+            <div class="d-flex align-items-center dis-row">
+              <i class="bi bi-coin"></i>
+              <h3 class="mb-0">300000</h3>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-laptop"></i>
+              <h5 class="mb-0">Macbook pro 2011</h5>
+            </div>
+          </div>
+
+          <div class="spec-row">
+            <div class="d-flex flex-wrap align-items-center">
+              <div>
+                <i class="bi bi-device-ssd"></i>
+                <h7 class="pe-2">128gb.ssd</h7>
+              </div>
+              <div>
+                <i class="bi bi-memory"></i>
+                <h7 class="pe-2">8gb.ddr3</h7>
+              </div>
+              <div>
+                <i class="bi bi-cpu"></i>
+                <h7 class="pe-2">i7</h7>
+              </div>
+              <div>
+                <i class="bi bi-cpu-fill"></i>
+                <h7 class="pe-2">3350M</h7>
+              </div>
+              <div>
+                <i class="bi bi-tv"></i>
+                <h7 class="pe-2">1280x800</h7>
+              </div>
+              <div>
+                <i class="bi bi-display"></i>
+                <h7 class="pe-2">LCD</h7>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+          <a href="#">
+            <i class="bi bi-star"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-star-half"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- listings Card -->
+
+<!-- listings Card -->
+<div class="col-xxl-3 col-md-4 col-lg-4 col-sm-6">
+  <div class="card listing">
+    <div class="card-body position-relative">
+      <a href="#" class="image-mask">
+        <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYR-lunshlZGsqK5KnW2rHtYfZM2aRf8WFcSier4rQoQloWHN-GGiGwDRRNQbnRY_nf6KHjooyR36ZVOewfegSQZx0ZJsw=s1600" class="card-img-top image-overlay limit-image">
+      </a>
+
+      <i class="bi bi-plus-square position-absolute top-0 end-0"></i>
+      <div class="d-flex">
+        <div class="col-8 card-dis">
+          <div class="row">
+            <div class="d-flex align-items-center dis-row">
+              <i class="bi bi-coin"></i>
+              <h3 class="mb-0">300000</h3>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-laptop"></i>
+              <h5 class="mb-0">Macbook pro 2011</h5>
+            </div>
+          </div>
+
+          <div class="spec-row">
+            <div class="d-flex flex-wrap align-items-center">
+              <div>
+                <i class="bi bi-device-ssd"></i>
+                <h7 class="pe-2">128gb.ssd</h7>
+              </div>
+              <div>
+                <i class="bi bi-memory"></i>
+                <h7 class="pe-2">8gb.ddr3</h7>
+              </div>
+              <div>
+                <i class="bi bi-cpu"></i>
+                <h7 class="pe-2">i7</h7>
+              </div>
+              <div>
+                <i class="bi bi-cpu-fill"></i>
+                <h7 class="pe-2">3350M</h7>
+              </div>
+              <div>
+                <i class="bi bi-tv"></i>
+                <h7 class="pe-2">1280x800</h7>
+              </div>
+              <div>
+                <i class="bi bi-display"></i>
+                <h7 class="pe-2">LCD</h7>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+          <a href="#">
+            <i class="bi bi-star"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-star-half"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- listings Card -->
+
+<!-- listings Card -->
+<div class="col-xxl-3 col-md-4 col-lg-4 col-sm-6">
+  <div class="card listing">
+    <div class="card-body position-relative">
+      <a href="#" class="image-mask">
+        <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTz4bhX2oPpCPrsy3uDBeB_DoCPMRO4MfGkhHKju_70mvx01OC0hw6sGJ7gtF9OAiIEaUZTyk1j2dkIbOyi1lf2pVG2=s1600" class="card-img-top image-overlay limit-image">
+      </a>
+
+      <i class="bi bi-plus-square position-absolute top-0 end-0"></i>
+      <div class="d-flex">
+        <div class="col-8 card-dis">
+          <div class="row">
+            <div class="d-flex align-items-center dis-row">
+              <i class="bi bi-coin"></i>
+              <h3 class="mb-0">300000</h3>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-laptop"></i>
+              <h5 class="mb-0">Macbook pro 2011</h5>
+            </div>
+          </div>
+
+          <div class="spec-row">
+            <div class="d-flex flex-wrap align-items-center">
+              <div>
+                <i class="bi bi-device-ssd"></i>
+                <h7 class="pe-2">128gb.ssd</h7>
+              </div>
+              <div>
+                <i class="bi bi-memory"></i>
+                <h7 class="pe-2">8gb.ddr3</h7>
+              </div>
+              <div>
+                <i class="bi bi-cpu"></i>
+                <h7 class="pe-2">i7</h7>
+              </div>
+              <div>
+                <i class="bi bi-cpu-fill"></i>
+                <h7 class="pe-2">3350M</h7>
+              </div>
+              <div>
+                <i class="bi bi-tv"></i>
+                <h7 class="pe-2">1280x800</h7>
+              </div>
+              <div>
+                <i class="bi bi-display"></i>
+                <h7 class="pe-2">LCD</h7>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+          <a href="#">
+            <i class="bi bi-star"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-star-half"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- listings Card -->
+
+
+
+
+        
+      </div>
     </section>
+    
 
 
 
@@ -876,14 +1394,10 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="copyright">
-      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+      &copy; Copyright <strong><span>CeeVee</span></strong>. All Rights Reserved
     </div>
     <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      Designed by <a href="#">strange</a>
     </div>
   </footer><!-- End Footer -->
 
