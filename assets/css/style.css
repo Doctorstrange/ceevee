@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 .bi-search {
-  font-size: 180%;
+  font-size: 150%;
   padding-left: 20px;
 }
 
@@ -11,6 +11,109 @@
 
 
 
+/*--------------------------------------------------------------
+# pending
+--------------------------------------------------------------*/
+.pending{
+  max-height: 200px;
+}
+
+.pending-row {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-radius: 5px;
+  box-shadow: #444444;
+  border-color: #0195a8;
+  padding: 5px 5px 5px 5px;
+  background-color: #F9F9F9;
+}
+
+.text-corner {
+ color: #4154f1;
+}
+
+
+.pending-row .row {
+
+  border-radius: 8px; /* Adjust the border radius as needed */
+  position: relative;
+}
+
+.pending-row .image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px; /* Adjust the border radius as needed */
+}
+
+.pending-row img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Adjust the border radius as needed */
+  object-fit: cover;
+  aspect-ratio: 4/3; /* Set the aspect ratio to 4:3 */
+}
+
+.pending-row .badge {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 0;
+}
+
+.pending-row .badge.top-0 {
+  top: 0;
+}
+
+.pending-row .badge.bottom-0 {
+  bottom: 0;
+}
+
+.pending-mask {
+  border-radius: 10px
+}
+
+.pending-row {
+  margin-top: 20px;
+
+}
+
+
+
+
+/*--------------------------------------------------------------
+# bootstrap icons
+--------------------------------------------------------------*/
+
+.bi-star {
+  font-size: 180%; /* Adjust the size as needed */
+}
+
+.bi-star-half {
+  font-size: 180%; /* Adjust the size as needed */
+}
+
+.bi-plus-square {
+  padding-top: 10px;
+  padding-right: 15px;
+  font-size: 180%; /* Adjust the size as needed */
+}
+
+.bi {
+  color: #03B8D1;
+}
+
+.bi-person-circle {
+  font-size: 180%; /* Adjust the size as needed */
+}
+
+.bi-person-square {
+  font-size: 500%;
+}
 
 /*--------------------------------------------------------------
 # dashboard
@@ -66,26 +169,8 @@
 
 }
 
-.bi-star {
-  font-size: 180%; /* Adjust the size as needed */
-}
-
-.bi-star-half {
-  font-size: 180%; /* Adjust the size as needed */
-}
-
-.bi-plus-square {
-  padding-top: 10px;
-  padding-right: 15px;
-  font-size: 180%; /* Adjust the size as needed */
-}
-
-.bi {
-  color: #03B8D1;
-}
-
 .d-flex h3 {
-  color: #002C32;
+  color: #0195a8;
 }
 
 
@@ -93,6 +178,7 @@
 .listing {
   padding-bottom: 10px;
   margin-bottom: 10px;
+  background-color: #F9F9F9;
 }
 
 
@@ -116,6 +202,25 @@
 
 
 
+/*--------------------------------------------------------------
+# sidebar filter elements
+--------------------------------------------------------------*/
+
+  /* Hide the up and down arrows */
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+  }
+
+
+  .checklist {
+    padding-left: 5px;
+  }
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -200,7 +305,7 @@ a:hover {
 .logo span {
   font-size: 26px;
   font-weight: 700;
-  color: #012970;
+  color: #03B8D1;
   font-family: "Nunito", sans-serif;
 }
 
@@ -430,7 +535,7 @@ a:hover {
   top: 60px;
   left: 0;
   bottom: 0;
-  width: 250px;
+  width: 300px;
   z-index: 996;
   transition: all 0.3s;
   padding: 20px;
@@ -512,7 +617,7 @@ a:hover {
   align-items: center;
   font-size: 15px;
   font-weight: 600;
-  color: #4154f1;
+  color: #03B8D1;
   transition: 0.3;
   background: #f6f9ff;
   padding: 10px 15px;
@@ -522,7 +627,7 @@ a:hover {
 .sidebar-nav .nav-link i {
   font-size: 16px;
   margin-right: 10px;
-  color: #4154f1;
+  color: #03B8D1;
 }
 
 .sidebar-nav .nav-link.collapsed {
@@ -535,12 +640,12 @@ a:hover {
 }
 
 .sidebar-nav .nav-link:hover {
-  color: #4154f1;
+  color: #03B8D1;
   background: #f6f9ff;
 }
 
 .sidebar-nav .nav-link:hover i {
-  color: #4154f1;
+  color: #03B8D1;
 }
 
 .sidebar-nav .nav-link .bi-chevron-down {
