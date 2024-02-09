@@ -33,7 +33,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
   
 
 </head>
@@ -51,6 +52,20 @@
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
 
+<!-- search -->
+
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bi bi-search"></i>
+                  <input
+                    type="text"
+                    class="form-control border-0 shadow-none"
+                    placeholder="Search..."
+                    aria-label="Search..."
+                  />
+                </div>
+              </div>
+<!-- End Search Bar -->
 
     <nav class="header-nav ms-auto">
 
@@ -250,7 +265,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="settings.html">
                 <i class="bi bi-gear"></i>
                 <span>settings</span>
               </a>
@@ -314,13 +329,13 @@
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
-        <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-
-            <i class="bi bi-person-square"></i>
-            <h2>30000</h2>
-            <span>Strange</span>
-
-          </div>
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Home</span>
+        </a>
+      </li>
+  <!-- Home Navigation end -->
 
 
 
@@ -857,11 +872,11 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Pending</h1>
+      <h1>Dashboard</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Pending</li>
+          <li class="breadcrumb-item active">Dashboard</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -874,175 +889,156 @@
     </section>
 
 
-    <section class="section dashboard">
+    <section class="section dashboard listing-all">
       <div class="row">
 
 
 
-
-
-  <!-- ======= pending ======= -->
-        <div class="container pending-row">
-            <div class="row all-pending">
-                <div class="col-xxl-2 col-md-2 col-lg-2 col-sm-2">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRrgvf9gpzKh5gPNaLSg0PvkWLnDSnKoIZ9CQ1G-BnjHGKX8UiYPGrMA8J_lvHGa2ke-3tOs_B5iH1SU-jsYKjBObWF4w=s1600" class="card-img-top image-overlay limit-image pending-mask img-fluid" style="aspect-ratio: 4/3; border-radius: 2px;">
-                    <span class="badge bg-secondary position-absolute top-0 end-0 ">Pending</span>
+        <!-- image slideshow -->
+        <div id="manualCarousel" class="carousel slide col-lg-6 col-md-6 col-sm-12 listing-image" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <!-- Wrap each image inside an anchor tag and add the necessary data attributes -->
+                  <a href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRrgvf9gpzKh5gPNaLSg0PvkWLnDSnKoIZ9CQ1G-BnjHGKX8UiYPGrMA8J_lvHGa2ke-3tOs_B5iH1SU-jsYKjBObWF4w=s1600" data-lightbox="gallery" data-title="Image 1">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRrgvf9gpzKh5gPNaLSg0PvkWLnDSnKoIZ9CQ1G-BnjHGKX8UiYPGrMA8J_lvHGa2ke-3tOs_B5iH1SU-jsYKjBObWF4w=s1600" class="d-block w-100" alt="Image 1">
+                  </a>
                 </div>
-        
-                <div class="col-lg-3 col-md-3 col-sm-3 col-6">
-                    <div class="row">
-                        <div class="d-flex align-items-center dis-row">
-                            <i class="bi bi-coin"></i>
-                            <h3 class="mb-0">300000</h3>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-laptop"></i>
-                            <h5 class="mb-0">Macbook pro 2011</h5>
-                        </div>
-                    </div>
-        
-                    <div class="spec-row">
-                        <div class="d-flex flex-wrap align-items-center">
-                            <div>
-                                <i class="bi bi-device-ssd"></i>
-                                <h7 class="pe-2">128gb.ssd</h7>
-                            </div>
-                            <div>
-                                <i class="bi bi-memory"></i>
-                                <h7 class="pe-2">8gb.ddr3</h7>
-                            </div>
-                            <div>
-                                <i class="bi bi-cpu"></i>
-                                <h7 class="pe-2">i7</h7>
-                            </div>
-                            <div>
-                                <i class="bi bi-cpu-fill"></i>
-                                <h7 class="pe-2">3350M</h7>
-                            </div>
-                            <div>
-                                <i class="bi bi-tv"></i>
-                                <h7 class="pe-2">1280x800</h7>
-                            </div>
-                            <div>
-                                <i class="bi bi-display"></i>
-                                <h7 class="pe-2">LCD</h7>
-                            </div>
-                        </div>
-                    </div>
+                <div class="carousel-item">
+                  <a href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYR-lunshlZGsqK5KnW2rHtYfZM2aRf8WFcSier4rQoQloWHN-GGiGwDRRNQbnRY_nf6KHjooyR36ZVOewfegSQZx0ZJsw=s1600" data-lightbox="gallery" data-title="Image 2">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYR-lunshlZGsqK5KnW2rHtYfZM2aRf8WFcSier4rQoQloWHN-GGiGwDRRNQbnRY_nf6KHjooyR36ZVOewfegSQZx0ZJsw=s1600" class="d-block w-100" alt="Image 2">
+                  </a>
                 </div>
+                <div class="carousel-item">
+                  <a href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTz4bhX2oPpCPrsy3uDBeB_DoCPMRO4MfGkhHKju_70mvx01OC0hw6sGJ7gtF9OAiIEaUZTyk1j2dkIbOyi1lf2pVG2=s1600" data-lightbox="gallery" data-title="Image 3">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTz4bhX2oPpCPrsy3uDBeB_DoCPMRO4MfGkhHKju_70mvx01OC0hw6sGJ7gtF9OAiIEaUZTyk1j2dkIbOyi1lf2pVG2=s1600" class="d-block w-100" alt="Image 3">
+                  </a>
+                </div>
+                <!-- Add more carousel items as needed -->
+              </div>
+            <a class="carousel-control-prev" href="#manualCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#manualCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          
+            <div class="row mt-5 preview-container">
+              <div class="col-12">
+                <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRrgvf9gpzKh5gPNaLSg0PvkWLnDSnKoIZ9CQ1G-BnjHGKX8UiYPGrMA8J_lvHGa2ke-3tOs_B5iH1SU-jsYKjBObWF4w=s1600" class="carousel-preview-img active current" alt="Preview Image 1">
+                <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYR-lunshlZGsqK5KnW2rHtYfZM2aRf8WFcSier4rQoQloWHN-GGiGwDRRNQbnRY_nf6KHjooyR36ZVOewfegSQZx0ZJsw=s1600" class="carousel-preview-img" alt="Preview Image 2">
+                <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTz4bhX2oPpCPrsy3uDBeB_DoCPMRO4MfGkhHKju_70mvx01OC0hw6sGJ7gtF9OAiIEaUZTyk1j2dkIbOyi1lf2pVG2=s1600" class="carousel-preview-img" alt="Preview Image 3">
+                <!-- Add more preview images as needed -->
+              </div>
             </div>
-        </div>
-          <!-- ======= end pending ======= -->
-        
-        
+          </div>
+        <!-- image slideshow -->
 
-  <!-- ======= revised ======= -->
-  <div class="container pending-row">
-    <div class="row all-pending">
-        <div class="col-xxl-2 col-md-2 col-lg-2 col-sm-2">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRrgvf9gpzKh5gPNaLSg0PvkWLnDSnKoIZ9CQ1G-BnjHGKX8UiYPGrMA8J_lvHGa2ke-3tOs_B5iH1SU-jsYKjBObWF4w=s1600" class="card-img-top image-overlay limit-image pending-mask img-fluid" style="aspect-ratio: 4/3; border-radius: 2px;">
-            <span class="badge bg-secondary position-absolute top-0 end-0 ">Revised</span>
-        </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-3 col-6">
+        <!-- seller card -->
+          <div class="listing-dis col-lg-6 col-md-6 col-sm-12">
+          <div class="d-flex flex-wrap">
+            <h2>
+                Macbook pro 2011
+            </h2>
+            <h2>
+               500gb hdd
+            </h2>
+            <h2>
+                4GB ram
+            </h2>
+          </div>
+          <div class="contact-dis col-lg-12 col-md-12 col-sm-12">
             <div class="row">
-                <div class="d-flex align-items-center dis-row">
-                    <i class="bi bi-coin"></i>
-                    <h3 class="mb-0">300000</h3>
+                <div class="person-pic col-3">
+                    <i class="bi bi-person-square"></i>
                 </div>
-                <div class="d-flex align-items-center">
-                    <i class="bi bi-laptop"></i>
-                    <h5 class="mb-0">Macbook pro 2011</h5>
+                <div class="person-dis col-6">
+                    <h5 class="no-margin">strange</h5>
+                    <h7 class="no-margin">last online 4 hours ago</h7>
+                    <div class="dflex">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
                 </div>
-            </div>
-
-            <div class="spec-row">
-                <div class="d-flex flex-wrap align-items-center">
-                    <div>
-                        <i class="bi bi-device-ssd"></i>
-                        <h7 class="pe-2">128gb.ssd</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-memory"></i>
-                        <h7 class="pe-2">8gb.ddr3</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-cpu"></i>
-                        <h7 class="pe-2">i7</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-cpu-fill"></i>
-                        <h7 class="pe-2">3350M</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-tv"></i>
-                        <h7 class="pe-2">1280x800</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-display"></i>
-                        <h7 class="pe-2">LCD</h7>
-                    </div>
+                <div class="botton-dis col-2">
+                    <button class="custom-button">haggle</button>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-  <!-- ======= end revised ======= -->
+          </div>
+    
+          </div>
+          <!-- seller card -->
 
 
 
-  <!-- ======= approved ======= -->
-  <div class="container pending-row">
-    <div class="row all-pending">
-        <div class="col-xxl-2 col-md-2 col-lg-2 col-sm-2">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRrgvf9gpzKh5gPNaLSg0PvkWLnDSnKoIZ9CQ1G-BnjHGKX8UiYPGrMA8J_lvHGa2ke-3tOs_B5iH1SU-jsYKjBObWF4w=s1600" class="card-img-top image-overlay limit-image pending-mask img-fluid" style="aspect-ratio: 4/3; border-radius: 2px;">
-            <span class="badge bg-secondary position-absolute top-0 end-0 ">Approved</span>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-3 col-6">
+          <div class="container">
+            <h2>MacBook Pro 2015 (15-inch) Specifications</h2>
             <div class="row">
-                <div class="d-flex align-items-center dis-row">
-                    <i class="bi bi-coin"></i>
-                    <h3 class="mb-0">300000</h3>
+              <div class="col-md-6">
+                <div class="scrollable-table">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Property</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Display Size</td>
+                        <td>15.4 inches</td>
+                      </tr>
+                      <tr>
+                        <td>Display Resolution</td>
+                        <td>2880 x 1800 pixels</td>
+                      </tr>
+                      <tr>
+                        <td>Processor</td>
+                        <td>2.2 GHz quad-core Intel Core i7</td>
+                      </tr>
+                      <tr>
+                        <td>Memory</td>
+                        <td>16 GB DDR3 RAM</td>
+                      </tr>
+                      <!-- Add more specifications as needed -->
+                    </tbody>
+                  </table>
                 </div>
-                <div class="d-flex align-items-center">
-                    <i class="bi bi-laptop"></i>
-                    <h5 class="mb-0">Macbook pro 2011</h5>
+              </div>
+              <div class="col-md-6">
+                <div class="scrollable-table">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Property</th>
+                        <th>Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Storage</td>
+                        <td>256 GB SSD</td>
+                      </tr>
+                      <tr>
+                        <td>Graphics</td>
+                        <td>Intel Iris Pro Graphics + AMD Radeon R9 M370X with 2GB GDDR5 memory</td>
+                      </tr>
+                      <!-- Add more specifications as needed -->
+                    </tbody>
+                  </table>
                 </div>
+              </div>
             </div>
+          </div>
 
-            <div class="spec-row">
-                <div class="d-flex flex-wrap align-items-center">
-                    <div>
-                        <i class="bi bi-device-ssd"></i>
-                        <h7 class="pe-2">128gb.ssd</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-memory"></i>
-                        <h7 class="pe-2">8gb.ddr3</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-cpu"></i>
-                        <h7 class="pe-2">i7</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-cpu-fill"></i>
-                        <h7 class="pe-2">3350M</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-tv"></i>
-                        <h7 class="pe-2">1280x800</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-display"></i>
-                        <h7 class="pe-2">LCD</h7>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-  <!-- ======= end approved ======= -->
+
+
+          
 
 
 
@@ -1082,11 +1078,18 @@
 <!-- Bootstrap Slider JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
 
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+    <!-- lightbox JS File -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
 
 </body>
 

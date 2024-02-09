@@ -1,4 +1,17 @@
 /*--------------------------------------------------------------
+# pending
+--------------------------------------------------------------*/
+
+.spec-box{
+  border-right-width: 1px;
+  border-right-color: #03B8D1;
+  border-right-style: dashed;
+}
+
+
+
+
+/*--------------------------------------------------------------
 # search
 --------------------------------------------------------------*/
 
@@ -81,6 +94,144 @@
   margin-top: 20px;
 
 }
+
+
+
+
+/*--------------------------------------------------------------
+# listings icons
+--------------------------------------------------------------*/
+
+#manualCarousel .carousel-inner .carousel-item img {
+  max-height: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.carousel-preview-img {
+  width: 80px;
+  height: auto;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.carousel-preview-img.active {
+  border-color: #007bff;
+}
+
+.carousel-preview-img.current {
+  border-color: rgb(0, 168, 229);
+}
+
+.preview-container {
+  text-align: left;
+}
+
+.listing-image{
+  padding-bottom: 40px;
+}
+
+
+
+.listing-dis{
+  padding-bottom: 40px;
+}
+
+
+.listing-all h2 {
+  font-family: 'Passion One', sans-serif;
+  font-size: xx-large;
+}
+
+
+
+.listing-all .d-flex h2{
+  padding-left: 10px;
+}
+
+/*style the contact card*/
+
+/* Define no-margin class to remove margins */
+.no-margin {
+  margin: 0;
+
+}
+
+.person-dis{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 12px;
+}
+
+.person-dis .bi-wallet2{
+  font-size: 180%;
+}
+
+.person-pic{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Style the button */
+.custom-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+h2 {
+  word-wrap: break-word;
+}
+
+.botton-dis{
+  padding-right: 20px;
+}
+
+.custom-button:hover {
+  color: blue;
+}
+
+/* Center the button */
+.contact-dis .col-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add red border */
+.contact-dis {
+  border: 1px solid #a5c5fe;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# listings table icons
+--------------------------------------------------------------*/
+
+
+    /* Custom CSS for styling */
+    .scrollable-table {
+      max-height: 600px;
+      overflow-y: auto;
+    }
+
 
 
 
@@ -200,6 +351,23 @@
   object-fit: cover;
 }
 
+
+@media (max-width: 576px) {
+  .listing {
+    font-size: 15px;
+  }
+  .listing h5{
+    font-size: 22px;
+  }
+  .listing .bi-star-half
+  {
+    font-size: 220%;
+  }
+  .listing .bi-star
+  {
+    font-size: 220%;
+  }
+}
 
 
 /*--------------------------------------------------------------
