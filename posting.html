@@ -65,16 +65,19 @@
 
 
 
-
-
             <!-- posting start -->
-            <li class="nav-item dropdown">
+        <li class="nav-item dropdown">
 
-              <a class="nav-link nav-icon" href="posting.html" data-bs-toggle="dropdown">
+            <a class="nav-link nav-icon" href="posting.html" data-bs-toggle="dropdown">
                 <i class="bi bi-plus-circle-fill"></i>
-              </a>
-    
-            </li><!-- End posting-->
+            </a>
+  
+          </li><!-- End posting-->
+  
+
+
+
+
 
 
 
@@ -169,7 +172,7 @@
           <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
             <i class="bi bi-heart"></i>
             <span class="badge bg-success badge-number">3</span>
-          </a><!-- End Messages Icon -->
+          </a>
 
         </li><!-- End Messages Nav -->
 
@@ -872,7 +875,6 @@
 
 
 
-
   <main id="main" class="main">
 
     <div class="pagetitle">
@@ -883,192 +885,81 @@
           <li class="breadcrumb-item active">Pending</li>
         </ol>
       </nav>
-    </div><!-- End Page Title -->
+    </div>
+    <div class="container post">
+        <div class="row d-flex flex-wrap justify-content-center">
+          <div class="col-lg-2 col-4 upload-container">
+            <i class="bi bi-plus-square-fill upload-icon"></i>
+            <p>FRONT</p>
+            <input type="file" id="front-upload" accept="image/*" class="d-none">
+            <img id="front-thumbnail" src="" alt="Front Image" style="max-width: 150px; max-height: 150px;" class="thumbnail d-none">
+          </div>
+          <div class="col-lg-2 col-4 upload-container">
+            <i class="bi bi-plus-square-fill upload-icon"></i>
+            <p>BACK</p>
+            <input type="file" id="back-upload" accept="image/*" class="d-none">
+            <img id="back-thumbnail" src="" alt="Back Image" style="max-width: 150px; max-height: 150px;" class="thumbnail d-none">
+          </div>
+          <div class="col-lg-2 col-4 upload-container">
+            <i class="bi bi-plus-square-fill upload-icon"></i>
+            <p>LEFT SIDE</p>
+            <input type="file" id="left-upload" accept="image/*" class="d-none">
+            <img id="left-thumbnail" src="" alt="Left Side Image" style="max-width: 150px; max-height: 150px;" class="thumbnail d-none">
+          </div>
+          <div class="col-lg-2 col-4 upload-container">
+            <i class="bi bi-plus-square-fill upload-icon"></i>
+            <p>RIGHT SIDE</p>
+            <input type="file" id="right-upload" accept="image/*" class="d-none">
+            <img id="right-thumbnail" src="" alt="Right Side Image" style="max-width: 150px; max-height: 150px;" class="thumbnail d-none">
+          </div>
+          <div class="col-lg-2 col-4 upload-container">
+            <i class="bi bi-plus-square-fill upload-icon"></i>
+            <p>SCREEN</p>
+            <input type="file" id="screen-upload" accept="image/*" class="d-none">
+            <img id="screen-thumbnail" src="" alt="Screen Image" style="max-width: 150px; max-height: 150px;" class="thumbnail d-none">
+          </div>
+        </div>
+      </div>
 
-    <section class="section dashboard">
-      <div class="row">
+      <div class="container defect">
+        <div class="row d-flex flex-wrap justify-content-center">
+            <div class="col-lg-2 col-4 upload-container">
+              <div class="d-flex justify-content-center">
+                <i class="bi bi-plus-square-fill upload-icon"></i>
+                <input type="file" id="left-upload" accept="image/*" class="d-none">
+                <img id="left-thumbnail" src="" alt="Left Side Image" style="max-width: 150px; max-height: 150px;" class="thumbnail d-none">
+              </div>
+              <div class="dropdown d-flex justify-content-center">
+                <p id="dropdownMenuButton">LEFT SIDE</p>
+              </div>
+              
 
+              </div>
+
+
+
+
+
+            <div class="col-lg-6 col-4">
+                <div class="dropdown d-flex justify-content-center">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                      Select Defect
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Broken Screen</a></li>
+                      <li><a class="dropdown-item" href="#">Scratched screen</a></li>
+                      <li><a class="dropdown-item" href="#">bleed</a></li>
+                    </ul>
+                  </div>
+                  
+            </div>
+        </div>
 
       </div>
-    </section>
+  
+  </main>
 
-
-    <section class="section dashboard">
-      <div class="row">
-
-
-
-
-
-  <!-- ======= pending ======= -->
-        <div class="container pending-row">
-            <div class="row all-pending">
-                <div class="col-xxl-2 col-md-2 col-lg-2 col-sm-2">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRrgvf9gpzKh5gPNaLSg0PvkWLnDSnKoIZ9CQ1G-BnjHGKX8UiYPGrMA8J_lvHGa2ke-3tOs_B5iH1SU-jsYKjBObWF4w=s1600" class="card-img-top image-overlay limit-image pending-mask img-fluid" style="aspect-ratio: 4/3; border-radius: 2px;">
-                    <span class="badge bg-secondary position-absolute top-0 end-0 ">Pending</span>
-                </div>
-        
-                <div class="col-lg-3 col-md-3 col-sm-3 col-6">
-                    <div class="row">
-                        <div class="d-flex align-items-center dis-row">
-                            <i class="bi bi-coin"></i>
-                            <h3 class="mb-0">300000</h3>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-laptop"></i>
-                            <h5 class="mb-0">Macbook pro 2011</h5>
-                        </div>
-                    </div>
-        
-                    <div class="spec-row">
-                        <div class="d-flex flex-wrap align-items-center">
-                            <div>
-                                <i class="bi bi-device-ssd"></i>
-                                <h7 class="pe-2">128gb.ssd</h7>
-                            </div>
-                            <div>
-                                <i class="bi bi-memory"></i>
-                                <h7 class="pe-2">8gb.ddr3</h7>
-                            </div>
-                            <div>
-                                <i class="bi bi-cpu"></i>
-                                <h7 class="pe-2">i7</h7>
-                            </div>
-                            <div>
-                                <i class="bi bi-cpu-fill"></i>
-                                <h7 class="pe-2">3350M</h7>
-                            </div>
-                            <div>
-                                <i class="bi bi-tv"></i>
-                                <h7 class="pe-2">1280x800</h7>
-                            </div>
-                            <div>
-                                <i class="bi bi-display"></i>
-                                <h7 class="pe-2">LCD</h7>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-          <!-- ======= end pending ======= -->
-        
-        
-
-  <!-- ======= revised ======= -->
-  <div class="container pending-row">
-    <div class="row all-pending">
-        <div class="col-xxl-2 col-md-2 col-lg-2 col-sm-2">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRrgvf9gpzKh5gPNaLSg0PvkWLnDSnKoIZ9CQ1G-BnjHGKX8UiYPGrMA8J_lvHGa2ke-3tOs_B5iH1SU-jsYKjBObWF4w=s1600" class="card-img-top image-overlay limit-image pending-mask img-fluid" style="aspect-ratio: 4/3; border-radius: 2px;">
-            <span class="badge bg-secondary position-absolute top-0 end-0 ">Revised</span>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-3 col-6">
-            <div class="row">
-                <div class="d-flex align-items-center dis-row">
-                    <i class="bi bi-coin"></i>
-                    <h3 class="mb-0">300000</h3>
-                </div>
-                <div class="d-flex align-items-center">
-                    <i class="bi bi-laptop"></i>
-                    <h5 class="mb-0">Macbook pro 2011</h5>
-                </div>
-            </div>
-
-            <div class="spec-row">
-                <div class="d-flex flex-wrap align-items-center">
-                    <div>
-                        <i class="bi bi-device-ssd"></i>
-                        <h7 class="pe-2">128gb.ssd</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-memory"></i>
-                        <h7 class="pe-2">8gb.ddr3</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-cpu"></i>
-                        <h7 class="pe-2">i7</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-cpu-fill"></i>
-                        <h7 class="pe-2">3350M</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-tv"></i>
-                        <h7 class="pe-2">1280x800</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-display"></i>
-                        <h7 class="pe-2">LCD</h7>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-  <!-- ======= end revised ======= -->
-
-
-
-  <!-- ======= approved ======= -->
-  <div class="container pending-row">
-    <div class="row all-pending">
-        <div class="col-xxl-2 col-md-2 col-lg-2 col-sm-2">
-            <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRrgvf9gpzKh5gPNaLSg0PvkWLnDSnKoIZ9CQ1G-BnjHGKX8UiYPGrMA8J_lvHGa2ke-3tOs_B5iH1SU-jsYKjBObWF4w=s1600" class="card-img-top image-overlay limit-image pending-mask img-fluid" style="aspect-ratio: 4/3; border-radius: 2px;">
-            <span class="badge bg-secondary position-absolute top-0 end-0 ">Approved</span>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-3 col-6">
-            <div class="row">
-                <div class="d-flex align-items-center dis-row">
-                    <i class="bi bi-coin"></i>
-                    <h3 class="mb-0">300000</h3>
-                </div>
-                <div class="d-flex align-items-center">
-                    <i class="bi bi-laptop"></i>
-                    <h5 class="mb-0">Macbook pro 2011</h5>
-                </div>
-            </div>
-
-            <div class="spec-row">
-                <div class="d-flex flex-wrap align-items-center">
-                    <div>
-                        <i class="bi bi-device-ssd"></i>
-                        <h7 class="pe-2">128gb.ssd</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-memory"></i>
-                        <h7 class="pe-2">8gb.ddr3</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-cpu"></i>
-                        <h7 class="pe-2">i7</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-cpu-fill"></i>
-                        <h7 class="pe-2">3350M</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-tv"></i>
-                        <h7 class="pe-2">1280x800</h7>
-                    </div>
-                    <div>
-                        <i class="bi bi-display"></i>
-                        <h7 class="pe-2">LCD</h7>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-  <!-- ======= end approved ======= -->
-
-
-
-
-        
-      </div>
-    </section>
+    
     
 
 
@@ -1102,6 +993,47 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"></script>
 
 
+<script>
+    const uploadIcons = document.querySelectorAll('.upload-icon');
+    const uploadInputs = document.querySelectorAll('.upload-container input[type="file"]');
+    const thumbnails = document.querySelectorAll('.upload-container img');
+
+    uploadIcons.forEach((icon, index) => {
+      icon.addEventListener('click', () => {
+        uploadInputs[index].click(); // Trigger file selection dialog
+      });
+    });
+
+    uploadInputs.forEach((input, index) => {
+      input.addEventListener('change', (event) => {
+        const file = event.target.files[0];
+
+        if (file) { // Check if a file is selected
+          const reader = new FileReader();
+          reader.onload = () => {
+            thumbnails[index].src = reader.result;
+            thumbnails[index].classList.remove('d-none'); // Show thumbnail
+            uploadIcons[index].classList.add('d-none'); // Hide upload icon
+          };
+          reader.readAsDataURL(file);
+        }
+      });
+    });
+  </script>
+
+
+
+<script>
+    const dropdown = document.getElementById('dropdownMenuButton');
+    const dropdownItems = document.querySelectorAll('.dropdown-item');
+  
+    dropdownItems.forEach(item => {
+      item.addEventListener('click', (event) => {
+        const selectedText = event.target.textContent;
+        dropdown.innerText = selectedText;
+      });
+    });
+  </script>
 
 
   <!-- Template Main JS File -->
