@@ -1,0 +1,589 @@
+{% extends "basee.html" %}
+
+{% block breadhead %}
+    Home
+{% endblock %}
+
+{% block breadname %}
+
+{% endblock %}
+
+
+
+
+{% block filers %}
+
+
+
+          
+
+
+          <!-- Condition Filter end-->
+          <li class="container nav-item">
+            <a class="nav-link collapsed" data-bs-target="#condition-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-node-minus"></i><span>Condition</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="condition-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+
+
+
+
+              <div class="brand-nav">
+
+                <!-- Scrollable checklist -->
+                <div class="checklist" id="checklist">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="hp">
+                    <label class="form-check-label" for="hp">
+                      Used
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="dell">
+                    <label class="form-check-label" for="dell">
+                      New
+                    </label>
+                  </div
+
+                  <!-- Add more items here -->
+                </div>
+              </div>
+
+            </ul>
+          </li>
+          <!-- condition Filer end-->
+
+
+          <!-- Price start filter label -->
+          <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#price-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-tag"></i></i><span>Price</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="price-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+
+              <li>
+                <div class="row">
+                  <div class="col-6">
+                    <input type="number" class="form-control" id="minInput" min="0" max="1000000000" placeholder="Min">
+                  </div>
+                  <div class="col-6">
+                    <input type="number" class="form-control" id="maxInput" min="0" max="100000000" placeholder="Max">
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </li>
+          <!-- Price End filter label -->
+
+
+
+            <!-- Brand Filter end-->
+          <li class="container nav-item">
+            <a class="nav-link collapsed" data-bs-target="#brand-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-journal-text"></i><span>Brand</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="brand-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+
+
+
+
+              <div class="brand-nav">
+                <!-- Search box -->
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                      <i class="fas fa-search"></i>
+                  </div>
+                  <input type="text" class="form-control" id="searchInput" placeholder="Search...">
+                </div>
+
+                <!-- Scrollable checklist -->
+                <div class="checklist" id="checklist">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="hp">
+                    <label class="form-check-label" for="hp">
+                      Acer
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="dell">
+                    <label class="form-check-label" for="dell">
+                      Alienware
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="lenovo">
+                    <label class="form-check-label" for="lenovo">
+                      Apple
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="hp">
+                    <label class="form-check-label" for="hp">
+                      Avita
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="dell">
+                    <label class="form-check-label" for="dell">
+                      Chuwi
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="lenovo">
+                    <label class="form-check-label" for="lenovo">
+                      Dell
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="hp">
+                    <label class="form-check-label" for="hp">
+                      Fujitsu
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="dell">
+                    <label class="form-check-label" for="dell">
+                      Google Chromebook
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="lenovo">
+                    <label class="form-check-label" for="lenovo">
+                      Hp
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="hp">
+                    <label class="form-check-label" for="hp">
+                      Huawei
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="dell">
+                    <label class="form-check-label" for="dell">
+                      Lenovo
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="lenovo">
+                    <label class="form-check-label" for="lenovo">
+                      LG
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="hp">
+                    <label class="form-check-label" for="hp">
+                      Microsoft
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="dell">
+                    <label class="form-check-label" for="dell">
+                      MSI
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="lenovo">
+                    <label class="form-check-label" for="lenovo">
+                      Razer
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="hp">
+                    <label class="form-check-label" for="hp">
+                      Samsung
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="dell">
+                    <label class="form-check-label" for="dell">
+                      Sony
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="lenovo">
+                    <label class="form-check-label" for="lenovo">
+                      Toshiba
+                    </label>
+                  </div>
+                  <!-- Add more items here -->
+                </div>
+              </div>
+
+            </ul>
+          </li>
+            <!-- Brand Filer end-->
+
+           <!-- Processor Filter end-->
+          <li class="container nav-item">
+            <a class="nav-link collapsed" data-bs-target="#processor-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-journal-text"></i><span>Processor</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="processor-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+
+
+
+
+              <div class="brand-nav">
+                <!-- Search box -->
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                      <i class="fas fa-search"></i>
+                  </div>
+                  <input type="text" class="form-control" id="searchInput" placeholder="Search...">
+                </div>
+
+                <!-- Scrollable checklist -->
+                <div class="checklist" id="checklist">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="hp">
+                    <label class="form-check-label" for="hp">
+                      Acer
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="dell">
+                    <label class="form-check-label" for="dell">
+                      Alienware
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="lenovo">
+                    <label class="form-check-label" for="lenovo">
+                      Apple
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="hp">
+                    <label class="form-check-label" for="hp">
+                      Avita
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="dell">
+                    <label class="form-check-label" for="dell">
+                      Chuwi
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="lenovo">
+                    <label class="form-check-label" for="lenovo">
+                      Dell
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="hp">
+                    <label class="form-check-label" for="hp">
+                      Fujitsu
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="dell">
+                    <label class="form-check-label" for="dell">
+                      Google Chromebook
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="lenovo">
+                    <label class="form-check-label" for="lenovo">
+                      Hp
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="hp">
+                    <label class="form-check-label" for="hp">
+                      Huawei
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="dell">
+                    <label class="form-check-label" for="dell">
+                      Lenovo
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="lenovo">
+                    <label class="form-check-label" for="lenovo">
+                      LG
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="hp">
+                    <label class="form-check-label" for="hp">
+                      Microsoft
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="dell">
+                    <label class="form-check-label" for="dell">
+                      MSI
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="lenovo">
+                    <label class="form-check-label" for="lenovo">
+                      Razer
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="hp">
+                    <label class="form-check-label" for="hp">
+                      Samsung
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="dell">
+                    <label class="form-check-label" for="dell">
+                      Sony
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="lenovo">
+                    <label class="form-check-label" for="lenovo">
+                      Toshiba
+                    </label>
+                  </div>
+                  <!-- Add more items here -->
+                </div>
+              </div>
+
+            </ul>
+          </li>
+            <!-- Processor Filer end-->
+
+
+           <!-- Processor Filter end-->
+            <div class="container mt-5">
+              <!-- Options checkboxes -->
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="option1">
+                  <label class="form-check-label" for="option1">
+                    Intel
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="option2">
+                  <label class="form-check-label" for="option2">
+                    AMD
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="option3">
+                  <label class="form-check-label" for="option3">
+                    Qualcomm
+                  </label>
+                </div>
+              </div>
+
+              <!-- Scrollable checklists -->
+              <div id="checklist1" class="checklist collapse">
+                <!-- Checklist for Option 1 -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="item1">
+                  <label class="form-check-label" for="item1">
+                    Item 1
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="item2">
+                  <label class="form-check-label" for="item2">
+                    Item 2
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="item3">
+                  <label class="form-check-label" for="item3">
+                    Item 3
+                  </label>
+                </div>
+                <!-- Add more items here -->
+              </div>
+
+              <div id="checklist2" class="checklist collapse">
+                <!-- Checklist for Option 2 -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="item4">
+                  <label class="form-check-label" for="item4">
+                    Item 4
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="item5">
+                  <label class="form-check-label" for="item5">
+                    Item 5
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="item6">
+                  <label class="form-check-label" for="item6">
+                    Item 6
+                  </label>
+                </div>
+                <!-- Add more items here -->
+              </div>
+
+              <div id="checklist3" class="checklist collapse">
+                <!-- Checklist for Option 3 -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="item7">
+                  <label class="form-check-label" for="item7">
+                    Item 7
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="item8">
+                  <label class="form-check-label" for="item8">
+                    Item 8
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="item9">
+                  <label class="form-check-label" for="item9">
+                    Item 9
+                  </label>
+                </div>
+                <!-- Add more items here -->
+              </div>
+            </div>
+           <!-- Processor Filter end-->
+
+
+
+{% endblock %}
+
+
+
+
+
+{% block listing %}
+{% set count = [0] %}
+    {% set listing = laptop_list['post_id'] | length %}
+    {% for value in laptop_list['post_id'] %}
+        {% set count_integer = count[0] %}
+        {% if count_integer < listing %}
+            <!-- listings Card -->
+            <div class="col-xxl-3 col-md-4 col-lg-4 col-sm-6">
+                <div class="card listing">
+                    <div class="card-body position-relative">
+                        <a href="#" class="image-mask">
+                            <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRrgvf9gpzKh5gPNaLSg0PvkWLnDSnKoIZ9CQ1G-BnjHGKX8UiYPGrMA8J_lvHGa2ke-3tOs_B5iH1SU-jsYKjBObWF4w=s1600" class="card-img-top image-overlay limit-image">
+                        </a>
+                        <i class="bi bi-plus-square position-absolute top-0 end-0"></i>
+                        <div class="d-flex">
+                            <div class="col-8 card-dis">
+                                <div class="row">
+                                    <div class="d-flex align-items-center dis-row">
+                                        <i class="bi bi-coin"></i>
+                                        <h3 class="mb-0">{{laptop_list['PRICE'][count_integer]}}</h3>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-laptop"></i>
+                                        <h5 class="mb-0">{{laptop_list['PRODUCT'][count_integer]}}</h5>
+                                    </div>
+                                </div>
+                                <div class="spec-row">
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        {% for key, value in laptop_list.items() %}
+                                            {% if key.startswith('DD') and value[count_integer] != "" %}
+                                                <div>
+                                                    <i class="bi bi-device-ssd"></i>
+                                                    <h7 class="pe-2">{{value[count_integer]}}</h7>
+                                                </div>
+                                            {% endif %}
+                                        {% endfor %}
+                                        <div>
+                                            <i class="bi bi-memory"></i>
+                                            <h7 class="pe-2">{{laptop_list['RAM_CAPACITY'][count_integer]}}</h7>
+                                        </div>
+
+                                        <div>
+                                            <i class="bi bi-tv"></i>
+                                            <h7 class="pe-2">{{laptop_list['SCREEN_RESOLUTION'][count_integer]}}</h7>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-display"></i>
+                                            <h7 class="pe-2">{{laptop_list['SCREEN_TYPE'][count_integer]}}</h7>
+                                        </div>
+                                        {% for key, value in laptop_list.items() %}
+                                            {% if key.startswith('CPU') and value[count_integer] != "" %}
+                                        <div>
+                                            <i class="bi bi-cpu"></i>
+                                            <h7 class="pe-2">{{value[count_integer]}}</h7>
+                                        </div>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+                                <a href="#">
+                                    <i class="bi bi-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-star-half"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- listings Card -->
+        {% endif %}
+        {% if count.append(count.pop() + 1) %}
+        {% endif %}
+    {% endfor %}
+{% endblock %}
+
+
+
+
+
+
+{% block script %}
+
+
+document.getElementById('searchInput').addEventListener('input', function() {
+  var searchValue = this.value.toLowerCase();
+  var checklistItems = document.querySelectorAll('.checklist .form-check');
+
+  checklistItems.forEach(function(item) {
+    var labelText = item.querySelector('.form-check-label').innerText.toLowerCase();
+    if (labelText.includes(searchValue)) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+});
+
+
+
+document.getElementById('option1').addEventListener('change', function() {
+  if (this.checked) {
+    document.getElementById('checklist1').classList.add('show');
+  } else {
+    document.getElementById('checklist1').classList.remove('show');
+  }
+});
+
+document.getElementById('option2').addEventListener('change', function() {
+  if (this.checked) {
+    document.getElementById('checklist2').classList.add('show');
+  } else {
+    document.getElementById('checklist2').classList.remove('show');
+  }
+});
+
+document.getElementById('option3').addEventListener('change', function() {
+  if (this.checked) {
+    document.getElementById('checklist3').classList.add('show');
+  } else {
+    document.getElementById('checklist3').classList.remove('show');
+  }
+});
+
+
+
+{% endblock %}
